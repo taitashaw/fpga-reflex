@@ -1,0 +1,182 @@
+{
+ "regression_pass": true,
+ "regression_matches": {
+  "s1_clean": 78,
+  "s2_burst_guard": 78,
+  "s3_burst_noguard": 78,
+  "s5_occlusion_burst": 78,
+  "s4_axi_top": 78
+ },
+ "truth_intercept_x": 244.0,
+ "scenarios": {
+  "s1_clean": {
+   "commands": 32,
+   "events_in": 3960,
+   "dropped": 0,
+   "misses": 6,
+   "latency_min": 43,
+   "latency_max": 74,
+   "worst_error_px": 16.0,
+   "burst_worst_error_px": null,
+   "last_x_pred": 247,
+   "last_error_px": 3.0,
+   "source": "build/run_sim.log"
+  },
+  "s2_burst_guard": {
+   "commands": 32,
+   "events_in": 12967,
+   "dropped": 8941,
+   "misses": 6,
+   "latency_min": 43,
+   "latency_max": 74,
+   "worst_error_px": 21.0,
+   "burst_worst_error_px": 21.0,
+   "last_x_pred": 247,
+   "last_error_px": 3.0,
+   "source": "build/run_sim.log"
+  },
+  "s3_burst_noguard": {
+   "commands": 32,
+   "events_in": 12967,
+   "dropped": 0,
+   "misses": 6,
+   "latency_min": 43,
+   "latency_max": 90,
+   "worst_error_px": 334.0,
+   "burst_worst_error_px": 334.0,
+   "last_x_pred": 247,
+   "last_error_px": 3.0,
+   "source": "build/run_sim.log"
+  },
+  "s5_occlusion_burst": {
+   "commands": 30,
+   "events_in": 12724,
+   "dropped": 8932,
+   "misses": 8,
+   "latency_min": 43,
+   "latency_max": 73,
+   "worst_error_px": 24.0,
+   "burst_worst_error_px": 24.0,
+   "last_x_pred": 247,
+   "last_error_px": 3.0,
+   "source": "build/run_sim.log"
+  },
+  "s4_axi_top": {
+   "commands": 32,
+   "events_in": 3300,
+   "dropped": 0,
+   "misses": 6,
+   "latency_min": 43,
+   "latency_max": 74,
+   "worst_error_px": 13.0,
+   "burst_worst_error_px": null,
+   "last_x_pred": 247,
+   "last_error_px": 3.0,
+   "source": "build/run_sim.log"
+  }
+ },
+ "no_coast": {
+  "commands": 26,
+  "events_in": 12724,
+  "dropped": 6674,
+  "misses": 9,
+  "latency_min": 43,
+  "latency_max": 115,
+  "worst_error_px": 395.0,
+  "burst_worst_error_px": 395.0,
+  "last_x_pred": 247,
+  "last_error_px": 3.0,
+  "source": "build/nocoast_run.log"
+ },
+ "bd_netlist_pass": true,
+ "bd_netlist_matches": {
+  "s4_axi_top": 78,
+  "s5_occlusion_burst": 75
+ },
+ "mutants_caught": 6,
+ "mutants_total": 6,
+ "timing": {
+  "wns_ns": 4.547,
+  "failing_setup": 0,
+  "endpoints": 4977,
+  "whs_ns": 0.025,
+  "failing_hold": 0,
+  "clock_mhz": 100
+ },
+ "device_util": {
+  "CLB LUTs": {
+   "used": 1919,
+   "available": 230400,
+   "percent": "0.83"
+  },
+  "CLB Registers": {
+   "used": 2017,
+   "available": 460800,
+   "percent": "0.44"
+  },
+  "DSPs": {
+   "used": 1,
+   "available": 1728,
+   "percent": "0.06"
+  }
+ },
+ "reflex_hier": {
+  "luts": 1165,
+  "ffs": 1212
+ },
+ "submodules": {
+  "regs": {
+   "lut_cells": 159,
+   "ffs": 136,
+   "dsps": 0
+  },
+  "gate": {
+   "lut_cells": 236,
+   "ffs": 64,
+   "dsps": 0
+  },
+  "window": {
+   "lut_cells": 106,
+   "ffs": 229,
+   "dsps": 0
+  },
+  "divider": {
+   "lut_cells": 195,
+   "ffs": 144,
+   "dsps": 0
+  },
+  "tracker": {
+   "lut_cells": 759,
+   "ffs": 566,
+   "dsps": 0
+  },
+  "servo": {
+   "lut_cells": 34,
+   "ffs": 41,
+   "dsps": 1
+  },
+  "leds": {
+   "lut_cells": 49,
+   "ffs": 32,
+   "dsps": 0
+  }
+ },
+ "critical_warnings": 0,
+ "bd_validated": true,
+ "bitstream": {
+  "file": "build/vivado/reflex_soc.runs/impl_1/reflex_bd_wrapper.bit",
+  "sha256_16": "f449295f296b8b96",
+  "built_utc": "2026-10-15 16:17"
+ },
+ "design": {
+  "sensor": "640x480",
+  "sim_window_cycles": 2000,
+  "divider_cycles": 38,
+  "max_steps": 255,
+  "coast_windows": 2,
+  "base_latency_cycles": 43,
+  "device": "XCZU7EV (ZCU104)",
+  "axi_base": "0xA000_0000",
+  "submodules": 7
+ }
+}

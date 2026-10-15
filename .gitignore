@@ -1,0 +1,10 @@
+build/
+.Xil/
+xsim.dir/
+*.jou
+*.log
+*.pb
+*.str
+*.wdb
+__pycache__/
+post/

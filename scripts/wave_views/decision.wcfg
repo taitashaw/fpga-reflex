@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_core.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_core" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="259,995,000 ps"></ZoomStartTime>
+      <ZoomEndTime time="260,755,000 ps"></ZoomEndTime>
+      <Cursor1Time time="260,045,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="230"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wave_markers>
+      <marker label="window_closes" time="260045000" />
+      <marker label="divider_done" time="260445000" />
+      <marker label="command_out" time="260695000" />
+   </wave_markers>
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">clock</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_core/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group2">
+      <obj_property name="label">window</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb_core/dut/window/wt">
+         <obj_property name="ElementShortName">wt[19:0]</obj_property>
+         <obj_property name="ObjectShortName">wt[19:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/window/close">
+         <obj_property name="ElementShortName">close</obj_property>
+         <obj_property name="ObjectShortName">close</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/window/snap_valid">
+         <obj_property name="ElementShortName">snap_valid</obj_property>
+         <obj_property name="ObjectShortName">snap_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/window/snap_cnt">
+         <obj_property name="ElementShortName">snap_cnt[19:0]</obj_property>
+         <obj_property name="ObjectShortName">snap_cnt[19:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/window/snap_sx">
+         <obj_property name="ElementShortName">snap_sx[29:0]</obj_property>
+         <obj_property name="ObjectShortName">snap_sx[29:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/window/snap_sy">
+         <obj_property name="ElementShortName">snap_sy[29:0]</obj_property>
+         <obj_property name="ObjectShortName">snap_sy[29:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group3">
+      <obj_property name="label">divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_core/dut/divider/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/divider/busy">
+         <obj_property name="ElementShortName">busy</obj_property>
+         <obj_property name="ObjectShortName">busy</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/divider/div_i">
+         <obj_property name="ElementShortName">div_i[5:0]</obj_property>
+         <obj_property name="ObjectShortName">div_i[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/divider/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/divider/qx">
+         <obj_property name="ElementShortName">qx[37:0]</obj_property>
+         <obj_property name="ObjectShortName">qx[37:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/divider/qy">
+         <obj_property name="ElementShortName">qy[37:0]</obj_property>
+         <obj_property name="ObjectShortName">qy[37:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group4">
+      <obj_property name="label">tracker</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb_core/dut/tracker/state">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/tracker/steps">
+         <obj_property name="ElementShortName">steps[8:0]</obj_property>
+         <obj_property name="ObjectShortName">steps[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/tracker/py">
+         <obj_property name="ElementShortName">py[39:0]</obj_property>
+         <obj_property name="ObjectShortName">py[39:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/tracker/vy">
+         <obj_property name="ElementShortName">vy[39:0]</obj_property>
+         <obj_property name="ObjectShortName">vy[39:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/tracker/cmd_valid">
+         <obj_property name="ElementShortName">cmd_valid</obj_property>
+         <obj_property name="ObjectShortName">cmd_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/tracker/x_pred">
+         <obj_property name="ElementShortName">x_pred[9:0]</obj_property>
+         <obj_property name="ObjectShortName">x_pred[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/tracker/latency">
+         <obj_property name="ElementShortName">latency[15:0]</obj_property>
+         <obj_property name="ObjectShortName">latency[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group5">
+      <obj_property name="label">servo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_core/dut/servo/cmd_fire">
+         <obj_property name="ElementShortName">cmd_fire</obj_property>
+         <obj_property name="ObjectShortName">cmd_fire</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/servo/servo_pulse">
+         <obj_property name="ElementShortName">servo_pulse[31:0]</obj_property>
+         <obj_property name="ObjectShortName">servo_pulse[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_core.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_core" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="239,655,000 ps"></ZoomStartTime>
+      <ZoomEndTime time="241,655,000 ps"></ZoomEndTime>
+      <Cursor1Time time="240,055,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="230"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wave_markers>
+      <marker label="burst_starts_w12" time="240055000" />
+   </wave_markers>
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">gate</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_core/dut/gate/s_valid">
+         <obj_property name="ElementShortName">s_valid</obj_property>
+         <obj_property name="ObjectShortName">s_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/gate/ex">
+         <obj_property name="ElementShortName">ex[9:0]</obj_property>
+         <obj_property name="ObjectShortName">ex[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/gate/ey">
+         <obj_property name="ElementShortName">ey[9:0]</obj_property>
+         <obj_property name="ObjectShortName">ey[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/gate/guard_active">
+         <obj_property name="ElementShortName">guard_active</obj_property>
+         <obj_property name="ObjectShortName">guard_active</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/gate/in_roi">
+         <obj_property name="ElementShortName">in_roi</obj_property>
+         <obj_property name="ObjectShortName">in_roi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/gate/accept">
+         <obj_property name="ElementShortName">accept</obj_property>
+         <obj_property name="ObjectShortName">accept</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_core/dut/gate/drop">
+         <obj_property name="ElementShortName">drop</obj_property>
+         <obj_property name="ObjectShortName">drop</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group2">
+      <obj_property name="label">tracker</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb_core/dut/tracker/roi_x">
+         <obj_property name="ElementShortName">roi_x[39:0]</obj_property>
+         <obj_property name="ObjectShortName">roi_x[39:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/tracker/roi_y">
+         <obj_property name="ElementShortName">roi_y[39:0]</obj_property>
+         <obj_property name="ObjectShortName">roi_y[39:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group3">
+      <obj_property name="label">window</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb_core/dut/window/acc_cnt">
+         <obj_property name="ElementShortName">acc_cnt[19:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_cnt[19:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group4">
+      <obj_property name="label">counters</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb_core/dut/gate/events_in">
+         <obj_property name="ElementShortName">events_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">events_in[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_core/dut/gate/events_dropped">
+         <obj_property name="ElementShortName">events_dropped[31:0]</obj_property>
+         <obj_property name="ObjectShortName">events_dropped[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
